@@ -111,19 +111,25 @@
             width: 30rem;
             height: 36rem;
             padding-bottom: 0.5rem;
-        }
-        .addings{
-            h4{
-                font-size: 1.5rem;
-                text-align: center;
-            }
-
-            .addings-list{
-                .adding{
-                    font-size: 1.2rem;
+            position: relative;
+            .addings{
+                h4{
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+    
+                .addings-list{
+                    .adding{
+                        font-size: 1.2rem;
+                    }
                 }
             }
+            .bottom{
+                position: absolute;
+                bottom: 1rem;
+            }
         }
+ 
     }
 }
 
