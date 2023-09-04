@@ -55,3 +55,38 @@
         }
     }
 }
+
+@media screen and (max-width: 800px){
+    .order{
+        flex-direction: column;
+        aside{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin-top: 4rem;
+            gap: 2rem;
+            width: 100%;
+            height: 15vh;
+        .pizza-filters, .drink-filters{
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            h3{
+                padding-bottom: 1rem;
+            }
+        }
+        }
+        .products{
+            padding-left: 0.5rem;
+            padding-top: 12rem;
+            .list{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(12rem, 0.5fr));
+                gap: 1rem;
+            }
+        }
+    }
+}

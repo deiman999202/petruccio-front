@@ -149,7 +149,9 @@ header{
     }
     header{
         .options{
-            margin: 0;
+            margin: 1rem;
+            padding-left: 2rem;
+            width: 100%;
             .link{
                 font-size: 1.2rem;
             }
