@@ -1,7 +1,5 @@
-import { useEffect } from 'react';
 import { Link, useSearchParams, useLocation, useNavigate  } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, deleteFromCart } from '../../redux/slice/cartSlice';
 import './Header.scss';
 import mainLogo from '../../assets/main_logo.png'
 import cart from '../../assets/cart.png'
@@ -12,7 +10,7 @@ const Header = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const location = useLocation()
   const navigate = useNavigate();
-  const dispatch = useDispatch()
+
 
   const cartValue = useSelector((state: any) => state.cart.value)
   

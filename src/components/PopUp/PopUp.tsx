@@ -39,6 +39,7 @@ const PopUp = (props:any) => {
         let newPrice = props.product.price
         addingsArr.map((adding:any) => {
           newPrice += adding.price
+          return ""
         })
         if(currentSize !== props.product.sizes[0]){
           newPrice += props.product.sizes.indexOf(currentSize) * 2
