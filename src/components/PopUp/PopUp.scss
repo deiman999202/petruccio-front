@@ -1,0 +1,92 @@
+@use '../../Global.scss';
+
+.pop-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #08080886;
+    left: -2rem;
+    top: -28rem;
+    width: 105rem;
+    height: 100rem;
+    z-index: 2;
+    overflow: hidden;
+    .pizza-choose{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        width: 45rem;
+        height: 35rem;
+        border-radius: 1rem;
+        z-index: 4;
+        padding-bottom: 1.5rem;
+        h2{
+            text-align: center;
+        }
+        img{
+            width: 10rem;
+            margin: 2rem 0;
+        }
+        .sizes{
+            text-align: center;
+            font-size: 2rem;
+            .size{
+                font-weight: bold;
+                color: #000;
+                padding: 0.2rem 0.5rem;
+                cursor: pointer;
+            }
+            .active{
+                background-color: Global.$primary-color;
+                color: #fff;
+            }
+        }
+        .bottom{
+            margin-top: 2rem;
+            .price{
+                font-weight: bold;
+            }
+            .buy{
+                display: inline;
+                background-color: Global.$primary-color;
+                color: #fff;
+                padding: 0.3rem 0.6rem;
+                border: none;
+                border-radius: 0.4rem;
+                font-size: 1rem;
+                max-width: 7rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .addings{
+        h4{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .addings-list{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            .adding{
+                transition: all 0.5s ease-in-out;
+                padding: 0.2rem 0.5rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .adding:hover{
+                background-color: Global.$primary-color;
+                color: #fff;
+            }
+            .active{
+                background-color: Global.$primary-color;
+                color: #fff;
+            }
+        }
+    }
+}
+

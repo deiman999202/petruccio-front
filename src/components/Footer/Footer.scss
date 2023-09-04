@@ -1,0 +1,47 @@
+@use '../../Global.scss';
+
+footer{
+    justify-content: space-between;
+    padding: 1rem;
+    width: 95%;
+    height: 15vh;
+    background-color: Global.$secondary-color;
+    color: #fff;
+    font-weight: bold;
+    z-index: 2;
+    // left part
+    .details{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    // right part
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        span{
+            a{
+                text-decoration: underline;
+                color: #fff;
+            }
+        }
+    }
+    .go-back{
+        p{
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }   
+}
+
+@media screen and (max-width: 1000px){
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        height: 20vh;
+    }
+}

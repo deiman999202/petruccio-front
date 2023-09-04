@@ -1,0 +1,95 @@
+@use '../../Global.scss';
+
+.cart-page{
+    padding: 8rem 3rem;
+    height: 30rem;
+    .empty-cart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: Global.$primary-color;
+    }
+    .cart-full{
+    .cart-products{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+        width: 70vw;
+        max-height: 30rem;
+        overflow-y: scroll;
+        .cart-product{
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            min-width: 25rem;
+            gap: 1rem;
+            border: 1px solid Global.$primary-color;
+            padding: 0.5rem 1rem;
+        .cart-product-image{
+            width: 4rem;
+        }
+        .delete-product{
+            border: 0;
+            font-size: 1.5rem;
+            background-color: #ff0000;
+            color: #fff;
+            padding: 0 0.5rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+        }
+        }
+    }
+    .cart-bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4rem;
+        width: 60vw;
+        margin-top: 2rem;
+        font-weight: bold;
+        .finish-order{
+            padding: 0.5rem 1rem;
+            background-color: Global.$primary-color;
+            color: #fff;
+            border: none;
+            font-weight: inherit;
+            cursor: pointer;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 1500px) {
+    .cart-page{
+        padding: 12rem 3rem 5rem 3rem;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .cart-page{
+        padding: 15rem 3rem 5rem 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cart-page{
+        .cart-bottom{
+            font-size: 1.5rem;
+        }
+        .cart-full{
+        .cart-products{
+            width: 90vw;
+            .cart-product{
+                min-width: 30rem;
+            }
+        }
+    }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+   
+}

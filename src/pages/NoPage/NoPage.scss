@@ -1,0 +1,15 @@
+@use '../../Global.scss';
+
+.no-page{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    color: Global.$secondary-color;
+}

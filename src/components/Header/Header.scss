@@ -1,0 +1,155 @@
+// importing of my general styles like primary color
+@use '../../Global.scss';
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 85%;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+    background-color: Global.$primary-color;
+    color: #fff;
+    font-weight: bold;
+    z-index: 2;
+    height: 15vh;
+    // left part of my header *********************************
+    //logo and name
+    .logo-cart{
+        display: flex;
+        gap: 2rem;
+        .logo-container{
+            display: flex;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+            .main-logo{
+                width: 5rem;
+            }
+            h1{
+                display: inline;
+                margin-left: 1rem;
+                font-size: 2rem;
+            }
+        }
+    
+        .cart-block{
+            // nice cart styling
+
+            .cart{
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+                position: relative;
+                z-index: 1;
+                .cart-img{
+                    width: 2rem;
+                    background-color: #eeb155;
+                    padding: 0.3rem;
+                    border-radius: 1rem 0 0 1rem;
+                }
+                span{
+                    font-size: 1.5rem;
+                    background-color: Global.$secondary-color;
+                    padding: 0.3rem;
+                    border-radius: 0 1rem 1rem 0;
+                }
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+                .cart-len{
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    bottom: -0.5rem;
+                    left: 1.5rem;
+                    width: 1rem;
+                    height: 1rem;
+                    background-color: Global.$primary-color;
+                    border-radius: 50%;
+                    font-size: 1rem;
+                }
+            }
+            .cart:hover{
+                filter: brightness(120%);
+            }
+           }
+
+    }
+        // my list of header options
+        .options{
+            margin: 0 3rem;
+            .link{
+                margin: 0 1rem;
+                padding: 0.5rem;
+                text-decoration: underline;
+                color: #fff;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+            .link.active{
+                background-color: Global.$secondary-color;
+            }
+        }
+    // right part of my header **********************************
+   
+}
+
+@media screen and (max-width: 1500px) {
+    html{
+        font-size: 15px;
+    }
+    header{
+        flex-direction: column;
+        height: 20vh;
+        .logo-cart{
+           display: flex; 
+           order: 1;
+           gap: 2rem;
+           margin-bottom: 0.5rem;
+        }
+        .options{
+                order: 2;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    html{
+        font-size: 14px;
+    }
+    header{
+        width: 100vw;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 13px;
+    }
+    header{
+        .options{
+            margin: 0;
+            .link{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    header{
+        .options{
+            margin: 0;
+            .link{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

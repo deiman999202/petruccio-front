@@ -1,0 +1,46 @@
+@use '../../Global.scss';
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.2rem 1rem 0.2rem;
+    border: 1px solid #969292;
+    width: 12.5rem;
+    height: 19rem;
+    
+    h3{
+        text-align: center;
+    }
+    .card-img{
+        width: 9rem;
+        height: 9rem;
+    }
+    .ingredients{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        .buy{
+            display: inline;
+            background-color: Global.$primary-color;
+            color: #fff;
+            padding: 0.3rem 0.6rem;
+            border: none;
+            border-radius: 0.4rem;
+            font-size: 1rem;
+            max-width: 7rem;
+            cursor: pointer;
+        }
+        .buy:active{
+            transform: scale(90%);
+        }
+        .price{
+            font-size: 1.2rem;
+        }
+    }
+}

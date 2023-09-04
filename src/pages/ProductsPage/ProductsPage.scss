@@ -1,0 +1,52 @@
+@use '../../Global.scss';
+
+.order{
+    padding: 4rem 0;
+    display: flex;
+    color: #fff;
+    // left side with filters
+    aside{
+        background-color: Global.$primary-color;
+        position: fixed;
+        padding: 2rem;
+        width: 7rem;
+        height: 20rem;
+        z-index: 1;
+    }
+    // product part
+    .products{
+        color: #000;
+        padding-left: 14rem;
+        padding-top: 1rem;
+        min-width: 70vw;
+        min-height: 80vh;
+        margin-top: 2rem;
+        h2{
+            margin: 1rem auto;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1rem;
+            .loader{
+                padding-left: 25rem;
+            }
+        }
+      
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .order{
+        padding: 8rem 0;
+        aside{
+            width: 7rem;
+            padding: 2rem 0rem 2rem 1rem;
+        }
+        .products{
+            padding-left: 8.5rem;
+        }
+    }
+}
