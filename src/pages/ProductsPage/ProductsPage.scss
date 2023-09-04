@@ -30,7 +30,7 @@
             grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
             gap: 1rem;
             .loader{
-                padding-left: 25rem;
+                padding-left: 5rem;
             }
         }
       
@@ -83,6 +83,9 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(12rem, 0.5fr));
                 gap: 1rem;
+                // .loader{
+                //     padding-left: 5rem;
+                // }
             }
         }
     }
