@@ -28,8 +28,9 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "install-client": "react-dotenv && react-scripts start",
+    "install-client": "react-dotenv && npm install",
     "build-client": "react-dotenv && react-scripts build",
+    "start-client": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
