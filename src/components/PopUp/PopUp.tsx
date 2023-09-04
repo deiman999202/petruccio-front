@@ -1,7 +1,7 @@
 import './PopUp.scss'
 import { useState, useEffect } from 'react'
-import { addToCart, deleteFromCart } from '../../redux/slice/cartSlice';
-import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from '../../redux/slice/cartSlice';
+import { useDispatch } from 'react-redux';
 
 const PopUp = (props:any) => {
 
@@ -45,7 +45,7 @@ const PopUp = (props:any) => {
         }
         setCurrentPrice(newPrice)
       }
-    }, [addingsArr, currentSize])
+    }, [addingsArr, currentSize, props.product.price, props.product.size])
 
 
   return (

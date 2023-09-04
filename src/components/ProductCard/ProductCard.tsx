@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios'
 import env from "react-dotenv"
 import {useSearchParams } from 'react-router-dom';
-import { addToCart, deleteFromCart } from '../../redux/slice/cartSlice';
+import { addToCart } from '../../redux/slice/cartSlice';
 import PopUp from '../PopUp/PopUp';
 import './ProductCard.scss'
 
@@ -13,7 +13,6 @@ const ProductCard = (props:any) => {
   const [searchParams] = useSearchParams();
   const dispatch = useDispatch()
   const [popUp, showPopUp] = useState(false)
-  const cartValue = useSelector((state: any) => state.cart.value)
 
 
 
