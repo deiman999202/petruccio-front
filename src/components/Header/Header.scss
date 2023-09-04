@@ -5,9 +5,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    width: 85%;
-    margin-bottom: 3rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
     padding: 0 1rem;
     background-color: Global.$primary-color;
     color: #fff;
@@ -148,6 +148,7 @@ header{
         font-size: 12px;
     }
     header{
+        width: 102%;
         .options{
             margin: 1rem;
             padding-left: 2rem;

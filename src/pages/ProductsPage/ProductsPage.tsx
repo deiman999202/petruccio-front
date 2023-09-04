@@ -83,7 +83,7 @@ const IndexPage = () => {
   return (
     <div className="order">
       {/* Left side with filters */}
-      <aside>
+      {!(searchParams.get("product") === 'sauces')  && <aside>
        <h2>Filters:</h2>
       {!searchParams.get("product") && <div className="pizza-filters">
         <h3>Pizza</h3>
@@ -109,7 +109,7 @@ const IndexPage = () => {
           <label htmlFor="no-sugar">No sugar</label>
         </div>
       </div>}
-      </aside>
+      </aside> }
       {/* Right side with products */}
       <div id='products' className="products">
         <h2>Yummy stuff for your belly</h2>
