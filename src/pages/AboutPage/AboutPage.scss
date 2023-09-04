@@ -3,3 +3,11 @@
     padding: 10rem;
     font-style: italic;
 }
+
+@media screen and (max-width: 1200px){
+    .about{
+        margin: 0;
+        padding: 15rem 5rem;
+        font-style: italic;
+    }
+}

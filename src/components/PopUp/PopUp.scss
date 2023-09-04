@@ -90,3 +90,25 @@
     }
 }
 
+@media screen and (max-width: 1200px){
+    .pop-up{
+        top: -28rem;
+        width: 110%;
+        height: 100rem;
+        .pizza-choose{
+            width: 50rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .pop-up{
+        top: -28rem;
+        width: 110%;
+        height: 100rem;
+        .pizza-choose{
+            width: 30rem;
+        }
+    }
+}
+
