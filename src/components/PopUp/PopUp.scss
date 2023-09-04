@@ -13,6 +13,7 @@
     z-index: 3;
     overflow: hidden;
     .pizza-choose{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -45,6 +46,8 @@
         }
         .bottom{
             margin-top: 2rem;
+            position: absolute;
+            bottom: 1rem;
             .price{
                 font-weight: bold;
             }
