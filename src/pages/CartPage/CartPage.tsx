@@ -43,7 +43,7 @@ const CartPage = () => {
         })}
       </div>
       <div className="cart-bottom">
-        <span className='final-price'>${finalPrice}</span>
+        <span className='final-price'>${(finalPrice.toFixed(2))}</span>
         <button className='finish-order' onClick={() => alert("Thank you for using my pet project. Of course such pizzeria doesn't exist. Hope to create something for commercial purpose. If you want to contact me, click on my name in footer.")}>Finish your order</button>
       </div>
       
