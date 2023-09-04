@@ -46,7 +46,7 @@ const PopUp = (props:any) => {
         }
         setCurrentPrice(newPrice)
       }
-    }, [addingsArr, currentSize, props.product.price, props.product.size])
+    }, [addingsArr, currentSize, props.product.price, props.product.sizes])
 
 
   return (

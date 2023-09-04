@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import axios from 'axios'
 import env from "react-dotenv"
 import {useSearchParams } from 'react-router-dom';

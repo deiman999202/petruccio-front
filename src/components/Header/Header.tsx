@@ -1,5 +1,5 @@
 import { Link, useSearchParams, useLocation, useNavigate  } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './Header.scss';
 import mainLogo from '../../assets/main_logo.png'
 import cart from '../../assets/cart.png'
