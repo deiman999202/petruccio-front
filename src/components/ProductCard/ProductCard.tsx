@@ -18,8 +18,8 @@ const ProductCard = (props:any) => {
 
   function getProduct(){
     if (!searchParams.get("product")){
-      showPopUp(true)
       window.scroll(0, 0)
+      showPopUp(true)
     }else{
     axios.post(env.API_URL + '/product', {id: _id, product: searchParams.get("product") || "pizza"}).then(response => {
       const {name, price, img} = response.data

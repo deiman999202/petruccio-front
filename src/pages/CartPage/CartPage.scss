@@ -16,6 +16,7 @@
         justify-content: space-between;
         gap: 2rem;
         flex-wrap: wrap;
+        margin-right: 2rem;
         width: 70vw;
         max-height: 30rem;
         overflow-y: scroll;
@@ -90,14 +91,3 @@
 }
 
 
-@media screen and (max-width: 800px) {
-    .cart-page{
-        .cart-full{
-        .cart-products{
-            .cart-product{
-                width: 28rem;
-            }
-        }
-    }
-    }
-}
