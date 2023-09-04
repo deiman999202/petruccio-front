@@ -91,5 +91,13 @@
 
 
 @media screen and (max-width: 800px) {
-   
+    .cart-page{
+        .cart-full{
+        .cart-products{
+            .cart-product{
+                min-width: 25rem;
+            }
+        }
+    }
+    }
 }
