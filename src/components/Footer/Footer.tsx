@@ -8,7 +8,7 @@ const Footer = () => {
         <span>Our delivery works in Cherkasy, Kyiv and Poltava. But soon here will be your city too:)</span> 
       </div>
       <div className="contacts">
-       <span>The father of this site is <a href="https://www.linkedin.com/in/dmytro-voloshyn-151a0b1bb/">Dmytro Voloshyn</a></span> 
+       <span>The father of this site is <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/dmytro-voloshyn-151a0b1bb/">Dmytro Voloshyn</a></span> 
        <span>If you have any questions please contact me:)</span>
       </div>
       <div className="go-back">

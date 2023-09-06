@@ -24,7 +24,7 @@ const Header = () => {
   
 
   return (
-    <header id='header'>
+    <header>
       {/* Part with logo and the name */}
       <div className="logo-cart">
         <Link to={'/'} className="logo-container">
@@ -33,10 +33,10 @@ const Header = () => {
           </Link> 
 
           <span className="cart-block dis-fa">
-            <div className="cart dis-fa">
+            <Link to={'/cart'} className="cart dis-fa">
               <img className='cart-img' src={cart} alt="cart" />
-              <Link to={'/cart'}><span>Go to cart</span><span className="cart-len">{cartValue.length}</span></Link>
-            </div>
+              <span className="cart-text">Go to cart</span><span className="cart-len">{cartValue.length}</span>
+            </Link>
           </span>
       </div>
         {/* All options, like pizzas, drinks */}
@@ -51,12 +51,6 @@ const Header = () => {
           <Link className={`${location.pathname === '/about' && 'active'} link`} to={'/about'}>About us</Link>
           <a className='link' href='#footer'>Contacts</a>
         </span>
-          {/* cart right part */}
-        
-
-      
-        
-
     </header>
   )
 }

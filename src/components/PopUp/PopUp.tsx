@@ -1,7 +1,7 @@
-import './PopUp.scss'
 import { useState, useEffect } from 'react'
 import { addToCart } from '../../redux/slice/cartSlice';
 import { useDispatch } from 'react-redux';
+import './PopUp.scss'
 
 const PopUp = (props:any) => {
 
@@ -58,7 +58,7 @@ const PopUp = (props:any) => {
             <div className="pizza-choose">
               <h2>{props.product.name}</h2>
               <img src={props.product.img} alt="pizza" />
-              <span className='sizes'>{props.product.sizes.map((size: string, index: number) => {
+              <span className='sizes'>{props.product.sizes.map((size: string) => {
                     return <span key={size} onClick={() => setCurrentSize(size)} className={`size ${currentSize === size ? 'active' : ''}`}>{size}</span>
               })}
               </span>
@@ -70,13 +70,13 @@ const PopUp = (props:any) => {
                   })}
                 </div>
               </div>
-            <div className="bottom">
-                <span className='price'>${currentPrice}</span>
-                <button className="buy" onClick={() => {
-                  dispatch(addToCart({id: props.product._id, name: props.product.name, price: currentPrice, img: props.product.img, size: currentSize, addings: addingsArr}))
-                  props.showPopUp(false)
-                }}>Add to cart</button>
-            </div>
+              <div className="bottom">
+                  <span className='price'>${currentPrice}</span>
+                  <button className="buy" onClick={() => {
+                    dispatch(addToCart({id: props.product._id, name: props.product.name, price: currentPrice, img: props.product.img, size: currentSize, addings: addingsArr}))
+                    props.showPopUp(false)
+                  }}>Add to cart</button>
+              </div>
             </div>
       </div>
   )
